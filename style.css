@@ -855,3 +855,105 @@ body{
     width:100%;
     height: 100%;
 }
+
+.Service{
+    margin-top: 0px;
+    display: inline-block;
+    justify-content: left;
+    height: 100vh;
+    position: relative;
+    margin-left: 15px;
+}
+
+.Service-contents{
+    height: 50%;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(3, 32%); 
+    grid-template-rows: repeat(2, 170px);  
+    gap: 20px; /* espace entre les cases */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Service-contents-1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.Service-txt-1{
+    width:20%;
+    height:100%;
+}
+
+.Service-txt-2{
+    width:78%;
+    height:100%;
+    margin-left: 2%;
+    display:block;
+}
+
+.Service-txt-2-1{
+    width: 100%;
+    height: 30%;
+}
+
+.Service-txt-2-2{
+    width: 100%;
+    height: 70%;
+}
+
+.Service-txt-1 i{
+    font-size: 28px;
+    border-left: 40%;
+    color: #ffffff;
+}
+
+.Service-txt-1 div{
+    background-color: rgb(20, 157, 221);
+    width:50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    height: 50px;
+    display: flex;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+
+
+.Service-txt-2-1 h3{
+    display: block;
+    margin-top: 0px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #000000;
+}
+
+.Service-txt-2-2 p{
+    display: block;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.Service-contents-1:hover .Service-txt-1 i {
+    color: rgb(20, 157, 221); /* Exemple : change la couleur de l'icône */
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}
+
+.Service-contents-1:hover .Service-txt-2-1 h3 {
+    color: rgb(20, 157, 221); /* Change la couleur du titre */
+}
+
+.Service-contents-1:hover .Service-txt-1 div{
+    border:2px solid rgb(20, 157, 221);
+    background-color: #ffffff;
+}
+
+.Service-contents-1:hover{
+    cursor: pointer;
+}
+
