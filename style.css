@@ -1,13 +1,20 @@
+body{
+    padding-left : 22%;
+    padding-right: 1%;
+    margin: 0;
+    position:top;
+    font-family: "Raleway", sans-serif;
+}
+
 header {
     color: var(--default-color);
-    background-color: #040b14;;
+    background-color: #040b14;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     padding: 0 15px;
-    width: 300px;
-    border-right: 1px solid;
+    width: 20%;
     text-align: center;
     align-items: center;
 }
@@ -133,7 +140,7 @@ span {
     font-weight: 400;
 }
 
-span:hover {
+a:hover span {
     color: white;
 }
 
@@ -143,26 +150,10 @@ a:hover .navicon{
     border-radius: 5px;
 }
 
-.navicon:visited {
-    color: rgb(20, 157, 221);
-    border-radius: 5px;
-}
-
-
-
-a:visited {
-    color: white;
-    font-weight: bold;
-}
-
-span:visited {
-    color: white;
-    font-weight: bold;
-}
-
 .hero {
     height: 100vh;
     width: 100%;
+    padding-right: 1.3%;
     background-size:cover;
     background-position: top;
     display: flex;
@@ -198,88 +189,52 @@ span:visited {
     margin-top: 430px;
 }
 
-body{
-    margin-left : 330px;
-    margin-top: 0px;
-    margin-right:0px;
-    margin-bottom:0px;
-    font-family: "Raleway", sans-serif;
-}
-
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.About {
-    display: flex;
+section {
+    display: block;
     justify-content: left;
     height: 100vh;
     position: relative;
-    margin-top: 0px;
-    margin-left: 15px;
 }
 
-.title_a{
-    padding-top: 70px;
-    margin: 0px;
-    display: block;
-    height: 10px;
-    position: absolute;
+section .title_a{
+    padding: 20px 15px 0px 15px;
     font-size: 32px;
     font-weight: 700;
     color:#040b14
 }
 
-.text_a{
-    padding-top: 140px;
-    position: absolute;
+section .text_a{
     width: 100%;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
+    padding: 10px 0px 0px 15px;
 }
 
-.line{
-    width: 4%;
-    height: 3.5px;
+section .line{
+    width: 50px;
+    height: 3px;
     background-color: rgb(20, 157, 221);
-    margin-top: 130px;
+    margin-left: 15px;
 }
 
-.fig1{
-    width: 30%;
-    height: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 250px;
-    margin-left: 0px;
-    display: inline;
-}
-
-.img_a{
+.About{
+    height: 450px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    display: flex;
 }
 
-.fig2{
-    width: 815px;
-    height: 60%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 250px;
-    margin-left: 360px;
-    display: inline;
+.About .img_a{
+    width: 350px;
+    height: 350px;
+    padding: 35px 0px 0px 15px;
+}
+
+.About .fig2{
+    width: 805px;
+    height: 400px;
+    display: block;
+    padding: 35px 0px 0px 15px;
 }
 
 .list_a{
@@ -297,7 +252,6 @@ body{
     justify-content: left;
     height: 40%;
     width: 45%;
-    position: absolute;
     margin-top: 10px;
     margin-left: 400px;
 }
@@ -328,6 +282,10 @@ body{
     margin: 0;
 }
 
+.text_a2 p{
+    font-size: 14px;
+}
+
 .li_a strong{
     margin-right: 5px;
 }
@@ -340,82 +298,46 @@ body{
 }
 
 .text_a3{
-    padding-top: 190px;
-    position: absolute;
+    padding-top: 50px;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
 }
 
 .stat{
     width: 100%;
-    position: absolute;
-    height: 15%;
-    margin-top: 800px;
+    height: 20%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(1,130px);
+    gap: 40px;
+    padding-left: 15px;
 }
 
-.stat1{
-    width: 20%;
-    position: absolute;
+.stat .stat1{
+    display: flex;
+}
+
+.stat1 .stat1_1{
     height: 100%;
-    margin-left: 10px;
-}
-
-.stat2{
-    width: 20%;
-    position: absolute;
-    height: 100%;
-    margin-left: 300px;
-}
-
-.stat3{
     width: 25%;
-    position: absolute;
-    height: 100%;
-    margin-left: 600px;
-}
-
-.stat4{
-    width: 20%;
-    position: absolute;
-    height: 100%;
-    margin-left: 900px;
-}
-
-.stat1_1{
-    width: 35%;
-    position: absolute;
-    height: 100%
-}
-
-.stat1_2{
-    width: 65%;
-    position: absolute;
-    height: 100%;
-    margin-left: 35%;
-}
-
-.stat1_2_1{
-    width: 100%;
-    position: absolute;
-    height: 50%;
-}
-
-.stat1_2_2{
-    width: 100%;
-    position: absolute;
-    height: 50%;
-    margin-top: 35%;
+    padding: 6px;
 }
 
 .stat1_1 i{
-    padding-top: 8%;
-    padding-left: 40%;
     color:  rgb(20, 157, 221);
     font-size: 40px;
     font-weight: 700;
-    position: absolute;
+}
+
+.stat1 .stat1_2{
+    display: block;
+}
+
+.stat1_2 .stat1_2_1{
+    height: 50%;
 }
 
 .stat1_2_1 h2{
@@ -426,158 +348,102 @@ body{
     font-family: "Arial", sans-serif;
 }
 
-.stat3 .stat1_2_2{
-    margin-top: 28%;
+.stat1_2_2 p{
+    margin: 0;
+    font-size: 13px;
 }
 
-.skills{
-    width: 100%;
-    position: absolute;
-    height: 60%;
-    margin-top: 960px;
-    background-color: #f4fafd;
-    margin-left: -12px;
+.Skill{
+    background-color: #f1f9fe;
+    height: 550px;
+    margin-top: 200px;
 }
 
-.skills .title_a{
-    margin-left: 10px;
+.Skill .title_a{
+    padding-top: 50px;
 }
 
-.skills .line{
-    margin-left: 10px;
+.Skill .Skills_Container{
+    height: 300px;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(1,100%);
+    gap:0px;
 }
 
-.skills p{
-    margin-left: 10px;
+.Skills1{
+    display: grid;
+    grid-template-columns: repeat(1,90%);
+    grid-template-rows: repeat(3,10%);
+    gap: 50px;
+    padding-top: 60px;
+    padding-left: 15px;
 }
 
-.skill1{
-    width: 49%;
-    position: absolute;
-    height: 40%;
-    margin-left: 10px;
-    margin-top: 35px;
+.Skills1-1{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(2,50%);
+    gap: 5px;
 }
 
-.skill2{
-    width: 49%;
-    position: absolute;
-    height: 40%;
-    margin-left: 50.5%;
-    margin-top: 35px;
-}
-
-.skill1_1{
-    width: 100%;
-    position: absolute;
-    height: 20%;
-}
-
-.skill1_2{
-    width: 100%;
-    position: absolute;
-    height: 20%;
-    margin-top: 10%;
-}
-
-.skill1_3{
-    width: 100%;
-    position: absolute;
-    height: 25%;
-    margin-top: 20%;
-}
-
-.skill1_1_1{
-    width: 100%;
-    position: absolute;
-    height: 52%;
+.Skills1-1-1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.skill1_1_2{
-    width: 100%;
-    position: absolute;
-    height: 25%;
-    background-color: #dcdcdd;
-    margin-top: 4%;
-}
-
-.p1{
-    display: inline-block;
-    padding-top: 10px;
+.Skills1-1-1 p{
+    margin: 0;
     font-size: 12px;
-    font-family: "Raleway", sans-serif;
+}
+.Skills1-1-2{
+    background-color: #dfe0e4;
+    height: 70%;
 }
 
-.p2{
-    display: inline-block;
-    margin-left: 0%;
-    font-size: 12px;
-    font-family: "Raleway", sans-serif;
-    padding-top: 10px;
-}
-
-.skill1_1_1 .p2{
-    text-align: left;
-}
-
-.skill1_1_2_1{
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    background-color:rgb(20, 157, 221);
-}
-
-.skill1_1_2_2{
-    width: 90%;
-    position: absolute;
-    height: 100%;
-    background-color:rgb(20, 157, 221);
-}
-
-.skill1_1_2_3{
-    width: 75%;
-    position: absolute;
-    height: 100%;
-    background-color:rgb(20, 157, 221);
-}
-
-.skill1_1_2_4{
-    width: 80%;
-    position: absolute;
-    height: 100%;
-    background-color:rgb(20, 157, 221);
-}
-
-.skill1_1_2_5{
-    width: 95%;
-    position: absolute;
-    height: 100%;
+.Skills1-1-2-in{
+    width:100%;
     background-color: rgb(20, 157, 221);
-}
-
-.skill1_1_2_6{
-    width: 55%;
-    position: absolute;
     height: 100%;
-    background-color: rgb(20, 157, 221);
 }
 
-.Resume{
-    margin-top: 700px;
-    display: inline-block;
-    justify-content: left;
-    height: 100vh;
-    position: relative;
-    margin-left: 15px;
+.Skills1-1-2-in2{
+    width:90%;
+    background-color: rgb(20, 157, 221);
+    height: 100%;
 }
+
+.Skills1-1-2-in3{
+    width:75%;
+    background-color: rgb(20, 157, 221);
+    height: 100%;
+}
+
+.Skills1-1-2-in4{
+    width:80%;
+    background-color: rgb(20, 157, 221);
+    height: 100%;
+}
+
+.Skills1-1-2-in5{
+    width:90%;
+    background-color: rgb(20, 157, 221);
+    height: 100%;
+}
+
+.Skills1-1-2-in6{
+    width:55%;
+    background-color: rgb(20, 157, 221);
+    height: 100%;
+}
+
+
 
 .Resume_text{
     width: 100%;
     height: 10%;
-    margin-left: 0;
+    margin-left: 15px;
     padding-left: 0;
     margin-top: 30px;
 }
@@ -586,12 +452,8 @@ body{
     margin-top: 10px;
     width: 100%;
     height: 100%;
-    margin-left: 0;
+    margin-left: 15px;
     display: flex;
-}
-
-.Resume .line{
-    margin-top: 130px;
 }
 
 .Block1_1{
@@ -613,7 +475,7 @@ body{
 
 .Nom2{
     width: 100%;
-    height: 27%;
+    height: 200px;
     border-left-color: rgb(20, 157, 221);
     border-left-width: 2px;
     border-left-style:solid ;
@@ -635,7 +497,7 @@ body{
     margin-left: 15px;
     font-family:Raleway, "Sans Serif";
     color:#282626;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 
 .Nom2 p{
@@ -644,7 +506,8 @@ body{
     color:#000000;
     font-style: italic;
     font-size: 15px;
-    margin-right: 2%;
+    padding-right: 2%;
+    margin-top: 15px;
 }
 
 .Nom2::before{
@@ -658,8 +521,6 @@ body{
     border: 2px solid rgb(20, 157, 221);
     border-radius: 50%;
 }
-
-
 
 .Nom2 ul li{
     list-style: disc;
@@ -675,21 +536,11 @@ body{
     color:#6e6c6c;
 }
 
-.Nom2 p{
-    margin-left: 15px;
-    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
-    color:#000000;
-    font-style: italic;
-    font-size: 15px;
-    display: block;
-    margin-right: 2%;
-}
-
 .Nom2 .p1{
     font-family: "Raleway", "Sans Serif";
     margin-left: 30px;
     font-size: 15px;
-    margin-right: 2%;
+    padding-right: 2%;
     margin-block: 4px;
     font-style: normal;
     font-weight: 510;
@@ -697,12 +548,12 @@ body{
 
 .Nom2 .p2{
     font-size: 15px;
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 .Nom2 .p3{
     font-size: 16px;
-    margin-right: 3%;
+    padding-right: 3%;
     font-style: normal;
 }
 
@@ -711,7 +562,6 @@ body{
     margin-left: 15px;
     font-family:Raleway, "Sans Serif";
     color:#282626;
-    margin-bottom: 0px;
 }
 
 .Block1_2 .p1{
@@ -758,7 +608,7 @@ body{
     border-left-color: rgb(20, 157, 221);
     border-left-width: 2px;
     border-left-style:solid ;
-    height: 93%;
+    height: 700px;
 }
 
 .Nom5{
@@ -796,7 +646,7 @@ body{
     margin-top: 300px;
     display: inline-block;
     justify-content: left;
-    height: 222vh;
+    height: 1200px;
     position: relative;
     margin-left: 15px;
     background-color:#f4fafd;
@@ -805,10 +655,10 @@ body{
 .Portofolio_text{
     width: 100%;
     height: 5%;
-    margin-left: 0;
+    margin-left: 15px;
     padding-left: 0;
     margin-top: 30px;
-    margin-bottom: 0%;
+    margin-bottom: 70px;
 }
 
 .Bouton_Portfolio{
@@ -816,6 +666,7 @@ body{
     height: 2%;
     margin-top: 0px;
     margin-left: 30%;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     gap: 18px;
@@ -836,10 +687,11 @@ body{
 
 .grid-container {
       display: grid;
-      grid-template-columns: repeat(3, 32%); /* 3 colonnes de taille égale */
+      grid-template-columns: repeat(3, 31.5%); /* 3 colonnes de taille égale */
       grid-template-rows: repeat(4, 300px);  /* 4 lignes de 100px de haut */
       gap: 20px; /* espace entre les cases */
-      padding: 20px;
+      padding-left:20px ;
+      padding-bottom: 40px;
       background-color: #f4fafd;
     }
 .grid-item {
@@ -855,3 +707,105 @@ body{
     width:100%;
     height: 100%;
 }
+
+.Service{
+    margin-top: 420px;
+    display: inline-block;
+    justify-content: left;
+    height: 100vh;
+    position: relative;
+    margin-left: 15px;
+}
+
+.Service-contents{
+    height: 50%;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(3, 32%); 
+    grid-template-rows: repeat(2, 170px);  
+    gap: 20px; /* espace entre les cases */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Service-contents-1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.Service-txt-1{
+    width:20%;
+    height:100%;
+}
+
+.Service-txt-2{
+    width:78%;
+    height:100%;
+    margin-left: 2%;
+    display:block;
+}
+
+.Service-txt-2-1{
+    width: 100%;
+    height: 30%;
+}
+
+.Service-txt-2-2{
+    width: 100%;
+    height: 70%;
+}
+
+.Service-txt-1 i{
+    font-size: 28px;
+    border-left: 40%;
+    color: #ffffff;
+}
+
+.Service-txt-1 div{
+    background-color: rgb(20, 157, 221);
+    width:50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    height: 50px;
+    display: flex;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+
+
+.Service-txt-2-1 h3{
+    display: block;
+    margin-top: 0px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #000000;
+}
+
+.Service-txt-2-2 p{
+    display: block;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.Service-contents-1:hover .Service-txt-1 i {
+    color: rgb(20, 157, 221); /* Exemple : change la couleur de l'icône */
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}
+
+.Service-contents-1:hover .Service-txt-2-1 h3 {
+    color: rgb(20, 157, 221); /* Change la couleur du titre */
+}
+
+.Service-contents-1:hover .Service-txt-1 div{
+    border:2px solid rgb(20, 157, 221);
+    background-color: #ffffff;
+}
+
+.Service-contents-1:hover{
+    cursor: pointer;
+}
+
