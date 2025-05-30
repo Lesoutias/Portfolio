@@ -268,7 +268,7 @@ section p{
 }
 
 .skills .skill-container {
-    height: 45vh; 
+    height: auto; 
     display: flex; 
     justify-content: left; 
     margin-top: 40px; 
@@ -779,4 +779,85 @@ section p{
     margin-top: 150px;
     border-top: 1px solid #ddd;
     margin-left: 20%;
+  }
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        display: none;
+    }
+    section {
+        width: 100%;
+        margin-left: 0; 
+        height: auto;
+    }
+
+    .hero{
+        width: 100%;
+        background-size:100%;
+        height: 10%;
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        padding: 0;
+        margin: 20%;
+    }
+
+    .hero span {
+        font-size: 20px; 
+        margin: 10px 0 20px 0px; 
+    }
+
+    .skills{
+        width: 100%;
+        height: auto;
+    }
+
+    .skill-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .skill-container ul {
+        width: 95%; 
+        margin: 0;
+        padding: 0 0 0 10px;
+        height: auto;
+    }
+
+    .Portofolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .Portofolio .grid-container {
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(6, 200px);
+        justify-content: center;
+        height: auto;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .Portofolio .grid-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonials .Testimonial-content {
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(3, 400px);
+        justify-content: center;
+        height: auto;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    .footer {
+        margin-left: 0;
+        width: 100%;
+    }
   }
